@@ -21,7 +21,7 @@ from PIL import Image
 #         new_img1_data.append( (255,255,255) )
 #     else:
 #         new_img1_data.append(p)
- #replace (255,255,255) with the transperency if possible
+ #replace (255,255,255) with the transperency if possible (0,0,0?????????)
 
 # img2_hsv = img2.convert(mode="HSV")
 # img2_hsv_data = img2_hsv.getdata()
@@ -30,7 +30,7 @@ from PIL import Image
 #         new_img2_data.append( (255,255,255) )
 #     else:
 #         new_img2_data.append(p)
- #replace (255,255,255) with the transperency if possible
+ #replace (255,255,255) with the transperency if possible (0,0,0?????????)
 
 #  new_img = Image.blend(img1,img2,.5)
 
