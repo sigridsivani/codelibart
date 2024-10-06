@@ -12,6 +12,8 @@ from PIL import Image
 # img1 = Image.open( path.join("images",random_file) )
 # img2 = Image.open( path.join("images",random_file) )
 
+#new blank transparent png 
+
 # img1_hsv = img1.convert(mode="HSV")
 # img1_hsv_data = img1_hsv.getdata()
 # new_img1_data = []
@@ -35,3 +37,12 @@ from PIL import Image
 #  new_img = Image.blend(img1,img2,.5)
 
 # new_img.save("newimage.jpg")
+
+
+# algorthm2 idea:
+
+# take 3 random pictures 
+# img 1: select all red pixels
+# img 2 : select all the blue
+# img 3: select all green 
+# paste onto png 
