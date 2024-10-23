@@ -1,0 +1,14 @@
+conceptually my idea is to demonstrate the empistomoligcial diffrerences between how women and men are linguistly "percieved". 
+I want to look at big text files such as reports from medical/scientific research and compare the words markov deems probable after gendered words such as "he" or "she", or also maybe the different terms used in research on female concepts vs male. i was also thinking ofusing film scripts as data to demonstrate examples of this in mainstream media. other places I could find data is popular novels, social research, film reviews/critics (femal targeted audeince vs male targeted audience).
+
+make a dictionary 
+key= gendered words 
+value= probable words after gendered words
+
+generate text that demonstrates the difference in  "tone" or social attitudes 
+use markov no-lib and markob-lib 
+
+
+
+
+

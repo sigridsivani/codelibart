@@ -20,6 +20,8 @@ def getTitles(soupdata):
         for t in titles:
             print(t.text)
 
+getTitles(crgslist_soup_html)            
+
 
 
 
