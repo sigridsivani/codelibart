@@ -9,17 +9,17 @@ directory = "corpus-scripts" #direct to the right folder
 
 
 
-goodfellas_response = requests.get("http://www.script-o-rama.com/movie_scripts/g/goodfellas-script-transcript.html")
-# meangirls_response = requests.get("https://www.dailyscript.com/scripts/mean_girls.pdf")
-goodfellas_soup_html = BeautifulSoup(goodfellas_response.text, "html.parser")
-# meangirls_soup_html = BeautifulSoup(meangirls_response.text, "html.parser")
-goodfellas_text = goodfellas_soup_html.get_text()
-# meangirls_text = meangirls_soup_html.get_text() 
+# goodfellas_response = requests.get("http://www.script-o-rama.com/movie_scripts/g/goodfellas-script-transcript.html")
+meangirls_response = requests.get("https://www.dailyscript.com/scripts/mean_girls.pdf")
+# goodfellas_soup_html = BeautifulSoup(goodfellas_response.text, "html.parser")
+meangirls_soup_html = BeautifulSoup(meangirls_response.text, "html.parser")
+# goodfellas_text = goodfellas_soup_html.get_text()
+meangirls_text = meangirls_soup_html.get_text() 
 
-file_path = os.path.join(directory, 'goodfellas-script.txt') #open directory
+# file_path = os.path.join(directory, 'goodfellas-script.txt') #open directory
 
-with open(file_path, "w") as goodfellas_data:
-    goodfellas_data.write(goodfellas_text) #turning the data into text
+# with open(file_path, "w") as goodfellas_data:
+#     goodfellas_data.write(goodfellas_text) #turning the data into text
 
 
 
@@ -68,14 +68,14 @@ character_lines_mg = re.findall(r"^([A-Z]+(?:\s[A-Z]+)*)\n(.*?)(?=\n[A-Z]+\s*\n|
 female_names_mg = ["CADY", "REGINA", "GRETCHEN","KAREN", "JANIS",]
 male_names_mg = ["AARON", "KEVIN GNOR","SHANE"]
 #create lists of female and male names"
-female_names_gf = ["CONNIE", "SANDRA", "WOMAN'S VOICE", "CARMELLA", "WOMAN"]
-male_names_gf = ["BONANSERA", "VITO CORLEONE", "MICHAEL","TESSIO", "TOM", "SONNY", "CLEMENZA", "FREDO"]
+# female_names_gf = ["CONNIE", "SANDRA", "WOMAN'S VOICE", "CARMELLA", "WOMAN"]
+# male_names_gf = ["BONANSERA", "VITO CORLEONE", "MICHAEL","TESSIO", "TOM", "SONNY", "CLEMENZA", "FREDO"]
 
 female_dialogue_mg = []
 male_dialogue_mg = []
 #creating empty lists for where the dialogue will go
-female_dialogue_gf = []
-male_dialogue_gf = []
+# female_dialogue_gf = []
+# male_dialogue_gf = []
 
 for character, dialogue in character_lines_mg:
     lines = dialogue.splitlines()
